@@ -86,6 +86,8 @@ function prasanth(){
         <img src={process.env.PUBLIC_URL+"pra.jpg"}/>
         <p>
           Name : Prasanth <br></br>
+
+          company name : ikshalabs<br></br>
           Mobile : 1234567890 <br></br>
           Email id : prasanth@gmail.com <br></br>
           Address : India <br></br>
