@@ -2,8 +2,21 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import { Button } from 'bootstrap';
 
+
+
+import React from 'react';
+import './App.css';
+import Navbar from './Components/Navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Pages';
+import About from './Pages/about';
+import Events from './Pages/events';
+import AnnualReport from './Pages/annual';
+import Teams from './Pages/team';
+import Blogs from './Pages/blogs';
+import SignUp from './Pages/signup';
+  
 
 // import React, { Component } from 'react'
 // import { button } from 'react-native'
@@ -79,6 +92,21 @@ function prasanth(){
 // const lok = prasanth();
 
   return (
+<>
+    
+<Router>
+      <Navbar />
+      <Routes>
+        <Route path='/' exact component={Home} />
+        <Route path='/about' component={About} />
+        <Route path='/events' component={Events} />
+        <Route path='/annual' component={AnnualReport} />
+        <Route path='/team' component={Teams} />
+        <Route path='/blogs' component={Blogs} />
+        <Route path='/sign-up' component={SignUp} />
+      </Routes>
+    </Router>
+
 
     <div className="App">
       <header className="App-header">
@@ -94,7 +122,7 @@ function prasanth(){
           About me : Still a learner.
         </p>
 
-       <button onClick={prasanth}> click  </button>
+       {/* <button onClick={prasanth}> click  </button> */}
 
        {/* <h1> {lok}</h1> */}
         <h1>Hello! user {output}. The Time is {h}:{m} now </h1>
@@ -103,6 +131,7 @@ function prasanth(){
 
       </header>
     </div>
+    </>
     
   );
 }
