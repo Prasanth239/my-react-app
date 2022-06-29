@@ -15,15 +15,17 @@ return (
 		<Bars />
 
 		<NavMenu>
+
+		<NavLink to='/home' >
+			Home
+		</NavLink>
 		<NavLink to='/about'>
-			About
+			About Me
 		</NavLink>
-		<NavLink to='/events' >
-			Events
+		<NavLink to='/step' >
+			Step Counter
 		</NavLink>
-		<NavLink to='/annual' >
-			Annual Report
-		</NavLink>
+		
 		<NavLink to='/team' >
 			Teams
 		</NavLink>
@@ -33,8 +35,6 @@ return (
 		<NavLink to='/sign-up' >
 			Sign Up
 		</NavLink>
-		{/* Second Nav */}
-		{/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
 		</NavMenu>
 		<NavBtn>
 		<NavBtnLink to='/signin'>Sign In</NavBtnLink>
