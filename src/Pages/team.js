@@ -4,10 +4,11 @@ const Teams = () => {
 return (
 	<div
 	style={{
+		background: '#669999',
 		display: 'flex',
-		justifyContent: 'Right',
-		alignItems: 'Right',
-		height: '100vh'
+		justifyContent: 'center',
+		alignItems: 'center',
+		height: '90vh'
 	}}
 	>
 	<h1>Welcome to Team</h1>

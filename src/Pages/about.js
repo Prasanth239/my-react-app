@@ -2,21 +2,18 @@ import React from 'react';
 
 export default function About() {
 
-
-
-
-
 return (
 	
 	<div
 
   style={{
+    background: '#669999',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '80vh'
+    height: '90vh'
   }}
-  className="App">
+ >
     <ul>
         <img src="pra.jpg"/>
         

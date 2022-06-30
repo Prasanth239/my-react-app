@@ -25,12 +25,11 @@ return (
 		<NavLink to='/step' >
 			Step Counter
 		</NavLink>
-		
+		<NavLink to='/bill' >
+			Split Bill Calculator
+		</NavLink>
 		<NavLink to='/team' >
 			Teams
-		</NavLink>
-		<NavLink to='/blogs' >
-			Blogs
 		</NavLink>
 		<NavLink to='/sign-up' >
 			Sign Up

@@ -4,10 +4,11 @@ const Home = () => {
 return (
 	<div
 	style={{
+		background: '#669999',
 		display: 'flex',
 		justifyContent: 'center',
 		alignItems: 'center',
-		height: '50vh'
+		height: '90vh'
 	}}
 	>
 	<h1>This is your Home page</h1>

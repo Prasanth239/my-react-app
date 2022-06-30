@@ -42,10 +42,11 @@ const Step = () => {
 	
 		<div
 		style={{
+			background: '#669999',
 			display: 'flex',
 			justifyContent: 'center',
 			alignItems: 'center',
-			height: '50vh'
+			height: '90vh'
 		}}
 		>
 	<ul>

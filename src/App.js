@@ -8,9 +8,10 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import About from './Pages/about';
 import Step from './Pages/step';
 import Home from './Pages/home';
+import Bill from './Pages/bill';
 import Teams from './Pages/team';
-import Blogs from './Pages/blogs';
 import SignUp from './Pages/signup';
+
 
 
 
@@ -26,7 +27,7 @@ export default function App() {
         <Route path='/step' component={Step} />
         <Route path='/home' component={Home} />
         <Route path='/team' component={Teams} />
-        <Route path='/blogs' component={Blogs} />
+        <Route path='/bill' component={Bill} />
         <Route path='/sign-up' component={SignUp} />
     </BrowserRouter>
     </>
