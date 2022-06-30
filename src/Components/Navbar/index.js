@@ -29,7 +29,7 @@ return (
 			Split Bill Calculator
 		</NavLink>
 		<NavLink to='/team' >
-			Teams
+			My Team
 		</NavLink>
 		<NavLink to='/sign-up' >
 			Sign Up

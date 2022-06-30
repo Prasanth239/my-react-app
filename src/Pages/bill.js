@@ -1,40 +1,33 @@
 import React from 'react';
 
-const Bill = () => {
-
-function splitBill(totalBill,People) {
-
-return`${totalBill/People}`;
-
-} 
-
-const amount = splitBill()
-
-
-return (
-	
-	
-		<div 
-		style={{
-			background: '#669999',
-			display: 'flex',
-			justifyContent: 'center',
-			alignItems: 'center',
-			height: '90vh'}}
-		>
-			<form>
-			<ul>
-Total Bill    :  <input type="text" id="totalBill" /><br></br>
-No. of People: <input type="text" id="People" /><br></br>
-<input type="button" onClick="splitBill()" Value="Split" />
-</ul>
-
-</form>
-</div>
+ const Bill = () => {
 	
 
-);
-};
+	
+	function divideBy() {
+
+	let num1 = document.getElementById("firstNumber").value;
+	let num2 = document.getElementById("secondNumber").value;
+	document.getElementById("result").innerHTML = num1 / num2;
+	}
+
+
+		  return (
+			<div>
+			  <form>
+				1st Number : <input type="text" id="firstNumber" /><br />
+				2nd Number: <input type="text" id="secondNumber" /><br />
+				
+				<input type="button" onClick={divideBy} defaultValue="Split" />
+			  </form>
+			  <h1>Each person has to pay 
+				<span id="result" />
+			  </h1>
+			 
+			</div>
+		  );
+		}
+	 
 
 export default Bill;
 
