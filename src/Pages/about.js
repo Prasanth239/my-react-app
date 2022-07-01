@@ -15,16 +15,16 @@ return (
   }}
  >
     <ul>
-        <img src="pra.jpg"/>
+        <img src="pra.jpg" style={{ marginBottom: "20px", width: "200px", borderRadius: "5px" }}/>
         
-        <p>
+        <h6>
           Name : Prasanth <br></br>
           Company Name : ikshalabs<br></br>
           Mobile : 1234567890 <br></br>
           Email id : prasanth@gmail.com <br></br>
           Address : India <br></br>
           
-        </p>
+        </h6>
 
         </ul>
 

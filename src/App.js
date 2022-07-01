@@ -5,6 +5,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import React from 'react';
 import Navbar from './Components/Navbar';
 import { BrowserRouter, Route } from 'react-router-dom';
+import Index from './Pages';
 import About from './Pages/about';
 import Step from './Pages/step';
 import Home from './Pages/home';
@@ -23,12 +24,14 @@ export default function App() {
     <>
     <BrowserRouter>
       <Navbar />
+      <Route path='/' exact component={Index} />
+      <Route path='/home' component={Home} />
         <Route path='/about' component={About} />
         <Route path='/step' component={Step} />
-        <Route path='/home' component={Home} />
-        <Route path='/team' component={Teams} />
         <Route path='/bill' component={Bill} />
+        <Route path='/team' component={Teams} />
         <Route path='/sign-up' component={SignUp} />
+        
     </BrowserRouter>
     </>
     

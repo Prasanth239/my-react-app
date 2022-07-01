@@ -15,11 +15,11 @@ return (
 		
 	}}
 	>
-	
-	<img src={pic1}width='420px'></img>
-	<img src={pic2} width= '250px'></img>
-	<img src="pra.jpg"width= '195px'/>
-
+	<div style={{display:'flex',}}>
+	<img src={pic1}style={{ padding: "20px", width: "250px", borderRadius: "5px" }}></img>
+	<img src={pic2} style={{ padding: "20px", width: "250px", borderRadius: "5px" }}></img>
+	<img src="pra.jpg"style={{ padding: "20px", width: "250px", borderRadius: "5px" }}/>
+	</div>
 	
 	</div>
 );
