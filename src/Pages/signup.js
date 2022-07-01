@@ -81,7 +81,7 @@ return (
         <input
           type="button"
           onClick={SignUp}
-          style={{ marginBottom: "30px", width: "100px", borderRadius: "5px" }}
+          style={{ width: "100px", borderRadius: "5px" }}
           defaultValue="Sign Up"
         />
 
