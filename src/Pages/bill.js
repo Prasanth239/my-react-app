@@ -29,14 +29,14 @@ const Bill = () => {
         }}
       >
         <input
-          type="text"
+          type="number"
           id="firstNumber"
           placeholder="Total Bill Value"
           style={{ marginBottom: "10px", width: "250px", borderRadius: "5px" }}
         />
         <br />
         <input
-          type="text"
+          type="number"
           id="secondNumber"
           placeholder="No. of People"
           style={{ marginBottom: "10px", width: "250px", borderRadius: "5px" }}
