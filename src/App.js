@@ -1,9 +1,6 @@
-
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
 import React from 'react';
-import Navbar from './Components/Navbar';
+import Navb from './Components/Navbar';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Index from './Pages';
 import About from './Pages/about';
@@ -13,9 +10,8 @@ import Bill from './Pages/bill';
 import Teams from './Pages/team';
 import SignUp from './Pages/signup';
 import SignIn from './Pages/signin';
-
-
-
+import Air from './Pages/Airbnb/airbnb';
+import Meme from './Pages/Meme/meme';
 
 
 export default function App() {
@@ -23,7 +19,7 @@ export default function App() {
   return (
     <>
     <BrowserRouter>
-      <Navbar />
+      <Navb />
       <Route path='/' exact component={Index} />
       <Route path='/home' component={Home} />
         <Route path='/about' component={About} />
@@ -32,6 +28,8 @@ export default function App() {
         <Route path='/team' component={Teams} />
         <Route path='/sign-up' component={SignUp} />
         <Route path='/signin' component={SignIn} />
+        <Route path='/airbnb' component={Air}/>
+        <Route path='/meme' component={Meme}/>
     </BrowserRouter>
     </>
     

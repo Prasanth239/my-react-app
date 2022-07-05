@@ -9,7 +9,7 @@ const SignIn = () => {
         justifyContent: "center",
         textAlign: "center",
         height: "90vh",
-        padding: "30px",
+        padding: "40px",
       }}
     >
       <div
@@ -24,7 +24,7 @@ const SignIn = () => {
         <input
           type="email"
           id="email"
-          placeholder="Enter e-mail"
+          placeholder="Enter Username / e-mail"
           style={{ marginBottom: "10px", width: "250px", borderRadius: "5px" }}
         />
         <br />

@@ -1,47 +1,71 @@
-import React from 'react';
+import React from "react";
 import {
-Nav,
-NavLink,
-Bars,
-NavMenu,
-NavBtn,
-NavBtnLink,
-} from './NavbarElements';
+  Nav,
+  Navbar,
+  NavbarBrand,
+  NavbarToggler,
+  Collapse,
+  NavItem,
+  NavLink,
+  NavbarText,
+  DropdownItem,
+  DropdownMenu,
+  DropdownToggle,
+  UncontrolledDropdown,
+} from "reactstrap";
 
-const Navbar = () => {
-return (
-	<>
-	<Nav>
-		<Bars />
+const Navb = () => {
+  return (
+    <>
+      <div>
+        <Nav>
+          <NavItem>
+            <NavLink active href="home">
+              Home
+            </NavLink>
+          </NavItem>
+		  <NavItem>
+            <NavLink active href="about">
+              About Me
+            </NavLink>
+          </NavItem>
+		  <NavItem>
+            <NavLink active href="step">
+              Step Counter
+            </NavLink>
+          </NavItem>
+		  <NavItem>
+            <NavLink active href="bill">
+			  Split Bill Calculator
+            </NavLink>
+          </NavItem>
+		  <NavItem>
+            <NavLink active href="team">
+				My Team
+            </NavLink>
+          </NavItem>
+		  <NavItem>
+            <NavLink active href="airbnb">
+              Airbnb
+            </NavLink>
+          </NavItem>
+		  <NavItem>
+            <NavLink active href="meme">
+              Meme Generator
+            </NavLink>
+          </NavItem>
+		  <NavItem>
+            <NavLink active href="sign-up">
+              Sign Up
+            </NavLink>
+          </NavItem>
+		 
 
-		<NavMenu>
-
-		<NavLink to='/home' >
-			Home
-		</NavLink>
-		<NavLink to='/about'>
-			About Me
-		</NavLink>
-		<NavLink to='/step' >
-			Step Counter
-		</NavLink>
-		<NavLink to='/bill' >
-			Split Bill Calculator
-		</NavLink>
-		<NavLink to='/team' >
-			My Team
-		</NavLink>
-		<NavLink to='/sign-up' >
-			Sign Up
-		</NavLink>
-		
-		</NavMenu>
-		<NavBtn>
-		<NavBtnLink to='/signin'>Sign In</NavBtnLink>
-		</NavBtn>
-	</Nav>
-	</>
-);
+         
+        </Nav>
+      </div>
+    </>
+  );
 };
 
-export default Navbar;
+export default Navb;
