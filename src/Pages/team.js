@@ -1,9 +1,11 @@
 
 import React from 'react';
+import { Card } from 'reactstrap';
 import pic1 from '../images/pic1.jpg';
 import pic2 from '../images/pic2.jpg';
 const Teams = () => {
 return (
+	<Card>
 	<div
 	style={{
 		background: '#669999',
@@ -37,6 +39,7 @@ return (
 	</div>
 	
 	</div>
+	</Card>
 );
 };
 

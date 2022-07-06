@@ -30,6 +30,8 @@ const Bill = () => {
       >
         <input
           type="number"
+          min="0" 
+            
           id="firstNumber"
           placeholder="Total Bill Value"
           style={{ marginBottom: "10px", width: "250px", borderRadius: "5px" }}

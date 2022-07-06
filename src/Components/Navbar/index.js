@@ -12,56 +12,66 @@ import {
   DropdownMenu,
   DropdownToggle,
   UncontrolledDropdown,
+  Button,
 } from "reactstrap";
 
 const Navb = () => {
   return (
     <>
       <div>
-        <Nav>
+        <Nav
+        color="info"
+        justified
+        tabs
+       fill
+        
+        
+        >
           <NavItem>
             <NavLink active href="home">
               Home
             </NavLink>
           </NavItem>
-		  <NavItem>
+          <NavItem>
             <NavLink active href="about">
               About Me
             </NavLink>
           </NavItem>
-		  <NavItem>
+          <NavItem>
             <NavLink active href="step">
               Step Counter
             </NavLink>
           </NavItem>
-		  <NavItem>
+          <NavItem>
             <NavLink active href="bill">
-			  Split Bill Calculator
+              Split Bill Calculator
             </NavLink>
           </NavItem>
-		  <NavItem>
+          <NavItem>
             <NavLink active href="team">
-				My Team
+              My Team
             </NavLink>
           </NavItem>
-		  <NavItem>
+          <NavItem>
             <NavLink active href="airbnb">
               Airbnb
             </NavLink>
           </NavItem>
-		  <NavItem>
+          <NavItem>
             <NavLink active href="meme">
               Meme Generator
             </NavLink>
           </NavItem>
-		  <NavItem>
+          <NavItem>
             <NavLink active href="sign-up">
               Sign Up
             </NavLink>
           </NavItem>
-		 
-
-         
+          <NavItem>
+            <NavLink active href="signin">
+              Sign In
+            </NavLink>
+          </NavItem>
         </Nav>
       </div>
     </>

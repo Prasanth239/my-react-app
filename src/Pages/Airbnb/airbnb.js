@@ -1,23 +1,28 @@
 import React from "react";
-import airbnb from '../../images/airbnb.png';
-import livrom from '../../images/livrom.webp';
+
+import head from "../../images/head.png";
 import "../../App.css";
+import Card from "./Card";
+import data from "./data";
 
 
 
 export default function Air() {
+  const cards = data.map((item) => {
+    return <Card key={item.id}
+     {...item} />;
+  });
   return (
-    <>
-    <nav className="nav1">
-            <img src={airbnb} alt="logo" className="nav--logo"/>
-        </nav>
-        
-        <section className="air">
-        <img src={livrom} alt="just a pic" className="air--photo" />
-        <h1 className="air--header">Online Experiences</h1>
-        <p className="air--text">Join unique interactive activities led by 
-        one-of-a-kind hosts—all without leaving home.</p>
-    </section>
-    </>
+    <div>
+     
+      <section className="air">
+        <img src={head} alt="just a pic" className="air--photo" />
+        <h1 className="air--header">Wonderful Places</h1>
+        <p className="air--text">
+        The world is filled with such a wide variety of wonderful destinations and beautiful places to visit, it can be difficult to compile a list of the best ones.
+        </p>
+      </section>
+      <section className="cards-list">{cards}</section>
+    </div>
   );
 }
