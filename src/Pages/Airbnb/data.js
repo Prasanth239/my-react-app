@@ -1,7 +1,4 @@
-import peru from "../../images/peru.jpg";
-import arizona from "../../images/arizona.jpg";
-import italy from "../../images/italy.jpg";
-import hawai from "../../images/hawai.jpg";
+
 
 
 export default [
@@ -10,7 +7,7 @@ export default [
         title: "Machu Picchu",
         description: " Capital city of the Inca Empire",
         price: 136,
-        coverImg: peru,
+        coverImg: "peru.jpg",
         stats: {
             rating: 5.0,
             reviewCount: 50
@@ -23,7 +20,7 @@ export default [
         title: "The Grand Canyon",
         description: "one of the seven natural wonders of the world",
         price: 125,
-        coverImg: arizona,
+        coverImg: "arizona.jpg",
         stats: {
             rating: 5.0,
             reviewCount: 6
@@ -36,7 +33,7 @@ export default [
         title: "Rome",
         description: "EThe Eternal City is more like a giant, living museum",
         price: 50,
-        coverImg: italy,
+        coverImg: "italy.jpg",
         stats: {
             rating: 4.8,
             reviewCount: 20
@@ -49,7 +46,7 @@ export default [
         title: "Maui",
         description: "A lush tropical beach on Maui",
         price: 25,
-        coverImg: hawai,
+        coverImg: "hawai.jpg",
         stats: {
             rating: 4.5,
             reviewCount: 7
@@ -57,5 +54,5 @@ export default [
         location: "Hawaii",
         openSpots:5,
     },
-    
+
 ]
