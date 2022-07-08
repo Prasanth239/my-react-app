@@ -1,5 +1,4 @@
 import React from "react";
-
 import head from "../../images/head.png";
 import "../../App.css";
 import Card from "./Card";
@@ -9,8 +8,7 @@ import data from "./data";
 
 export default function Air() {
   const cards = data.map((item) => {
-    return <Card key={item.id}
-     {...item} />;
+    return <Card {...item} />;
   });
   return (
     <div>

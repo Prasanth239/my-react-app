@@ -12,14 +12,16 @@ export default function Meme() {
   }
 
   return (
-    <>
-      <div>
-        <Button onClick={getMemeImage}>Get a random image 🖼</Button>
-      </div>
+  
+      <div class="text-center" >
+     
+        <Button onClick={getMemeImage} class="btn btn-primary btn-lg">Click to generate meme</Button>
+      
 
-      <div className="center">
-        <img src={memeImage} width="300px" />
+        <div   >
+        <img src={memeImage}  width="350px" />
+        </div>
       </div>
-    </>
+   
   );
 }

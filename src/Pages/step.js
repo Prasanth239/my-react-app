@@ -1,23 +1,18 @@
-import React from "react";
+import { Button } from "reactstrap";
+import React,{useState} from "react";
 
 const Step = () => {
-  function walkingSteps(dailySteps, daysWalked) {
-    let stepCount = 50;
 
-    return function steps() {
-      stepCount = stepCount + dailySteps * daysWalked;
-      return stepCount;
-    };
-  }
+const initialSteps = 1
+const dailySteps=100
 
-  let days = Math.floor(Math.random() * 10 + 1);
+const [days, setDays] = useState(initialSteps)
 
-  const totalSteps = walkingSteps(100, days);
+function randomDay(){ 
+setDays(Math.floor(Math.random()*367))
+}
 
-  totalSteps();
-  function out() {
-    document.getElementById("result").innerHTML = totalSteps();
-  }
+const totalSteps = (days*dailySteps)+ initialSteps;
 
   return (
     <div
@@ -29,10 +24,11 @@ const Step = () => {
         height: "90vh",
       }}
     >
-      <input type="button" onClick={out} value="Click here for Total Steps" />
-      <p>
-        total steps after {days} days is <span id="result"></span>steps
-      </p>
+      
+      <Button onClick={randomDay} class="btn btn-primary btn-lg" >Click here for Total Steps</Button>
+      <h6>
+        Total steps after <span> {days} </span> days is steps<span> {totalSteps} </span>  
+      </h6>
     </div>
   );
 };
