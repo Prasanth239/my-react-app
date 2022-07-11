@@ -4,7 +4,7 @@ const SignUp = () => {
 return (
 	<div
       style={{
-        background: "#669999",
+      
         display: "block",
         justifyContent: "center",
         textAlign: "center",
@@ -14,7 +14,7 @@ return (
     >
       <div
         style={{
-          background: "#669999",
+        
           display: "block",
           justifyContent: "center",
           textAlign: "center",
@@ -68,14 +68,14 @@ return (
         />
         <br />
 
-		<label><input
+		<p><label><input
           type="checkbox"
           id="box"
          value=''
           style={{ marginBottom: "10px", }}
         />
-		I agree to Terms & Conditions </label>
-        <br />
+		I agree to Terms & Conditions </label></p>
+        
 		
 
         <input

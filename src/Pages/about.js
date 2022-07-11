@@ -1,4 +1,5 @@
 import React from 'react';
+import pic3 from '../images/pic3.jpg';
 
 export default function About() {
 
@@ -7,7 +8,7 @@ return (
 	<div
 
   style={{
-    background: '#669999',
+  
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -15,7 +16,7 @@ return (
   }}
  >
     <ul>
-        <img src="pra.jpg" style={{ marginBottom: "20px", width: "200px", borderRadius: "5px" }}/>
+        <img src={pic3} style={{ marginBottom: "20px", width: "200px", borderRadius: "5px" }}/>
         
         <h6>
           Name : Prasanth <br></br>

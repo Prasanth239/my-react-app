@@ -7,10 +7,10 @@ import About from './Pages/about';
 import Step from './Pages/step';
 import Home from './Pages/home';
 import Bill from './Pages/bill';
-import Teams from './Pages/team';
+import Teams from './Pages//Team/team';
 import SignUp from './Pages/signup';
 import SignIn from './Pages/signin';
-import Air from './Pages/Airbnb/airbnb';
+import Travel from './Pages/TravelCard/travel';
 import Meme from './Pages/Meme/meme';
 
 
@@ -28,7 +28,7 @@ export default function App() {
         <Route path='/team' component={Teams} />
         <Route path='/sign-up' component={SignUp} />
         <Route path='/signin' component={SignIn} />
-        <Route path='/airbnb' component={Air}/>
+        <Route path='/travel' component={Travel}/>
         <Route path='/meme' component={Meme}/>
     </BrowserRouter>
     </>

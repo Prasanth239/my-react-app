@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Button } from "reactstrap";
 import memeData from "./memeData";
 
 export default function Meme() {
@@ -12,16 +11,17 @@ export default function Meme() {
   }
 
   return (
-  
-      <div class="text-center" >
-     
-        <Button onClick={getMemeImage} class="btn btn-primary btn-lg">Click to generate meme</Button>
-      
-
-        <div   >
-        <img src={memeImage}  width="350px" />
-        </div>
+    
+    <div class="p-3 mb-2  text-white">
+      <div class="d-grid col-4 mx-auto">
+        <button onClick={getMemeImage} class="btn btn-primary btn-lg"> Click to generate meme </button> 
+      </div >
+      <div class="text-center"
+      >
+      <img src={memeImage} class="img-thumbnail"  width="20%" />
       </div>
-   
+     
+    </div>
+    
   );
 }

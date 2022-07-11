@@ -1,10 +1,12 @@
-import React from 'react';
+import React , {useState}from 'react';
 
 const Home = () => {
+	
+	 
 return (
 	<div
 	style={{
-		background: '#669999',
+		
 		display: 'flex',
 		justifyContent: 'center',
 		alignItems: 'center',
@@ -12,6 +14,7 @@ return (
 	}}
 	>
 	<h1>This is your Home page</h1>
+	
 	</div>
 );
 };

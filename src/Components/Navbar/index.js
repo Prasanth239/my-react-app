@@ -53,8 +53,8 @@ const Navb = () => {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink active href="airbnb">
-              Airbnb
+            <NavLink active href="travel">
+              Travel Cards
             </NavLink>
           </NavItem>
           <NavItem>

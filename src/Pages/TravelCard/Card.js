@@ -12,10 +12,10 @@ export default function Card(props) {
       <h6 className="card--title">{props.title} • <span className="gray">{props.location}</span></h6>
       <p className="card--title">{props.description}</p>
       <div className="card--stats">
-      <span>Rating</span><img src={require('../../images/star.png')} className="card--star" />
+     <p> <span>Rating</span><img src={require('../../images/star.png')} className="card--star" />
         <span>{props.stats.rating}</span>
         <span className="gray">({props.stats.reviewCount}) </span>
-        
+        </p>
       </div>
      
       

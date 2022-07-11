@@ -11,7 +11,7 @@ const Bill = () => {
   return (
     <div
       style={{
-        background: "#669999",
+       
         display: "block",
         justifyContent: "center",
         textAlign: "center",
@@ -21,7 +21,7 @@ const Bill = () => {
     >
       <div
         style={{
-          background: "#669999",
+          
           display: "block",
           justifyContent: "center",
           textAlign: "center",
@@ -39,6 +39,7 @@ const Bill = () => {
         <br />
         <input
           type="number"
+          min="0"   
           id="secondNumber"
           placeholder="No. of People"
           style={{ marginBottom: "10px", width: "250px", borderRadius: "5px" }}

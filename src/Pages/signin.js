@@ -4,7 +4,7 @@ const SignIn = () => {
   return (
     <div
       style={{
-        background: "#669999",
+       
         display: "block",
         justifyContent: "center",
         textAlign: "center",
@@ -14,7 +14,7 @@ const SignIn = () => {
     >
       <div
         style={{
-          background: "#669999",
+         
           display: "block",
           justifyContent: "center",
           textAlign: "center",

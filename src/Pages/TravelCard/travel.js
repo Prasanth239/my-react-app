@@ -8,7 +8,8 @@ import data from "./data";
 
 export default function Air() {
   const cards = data.map((item) => {
-    return <Card {...item} />;
+    return <Card key={item.id}
+     {...item} />;
   });
   return (
     <div>

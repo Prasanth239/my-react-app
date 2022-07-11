@@ -22,7 +22,7 @@ const Index = () => {
 return (
 	<div
 	style={{
-		background: '#669999',
+		
 		display: 'flex',
 		justifyContent: 'center',
 		alignItems: 'center',

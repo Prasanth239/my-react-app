@@ -1,4 +1,7 @@
 
+
+
+
 .air1{
   padding: 50px;
 }
@@ -21,10 +24,12 @@ section {
 }
 
 .air--header {
+  
   margin-bottom: 16px;
 }
 
 .air--text {
+
   margin-top: 0;
 }
 
@@ -32,7 +37,7 @@ section {
 
 .cards-list {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 20px;
   overflow-x: auto;
 }
@@ -44,12 +49,18 @@ section {
   display: flex;          /* ADD */
   flex-direction: column; /* ADD */
   position: relative;
+  background: transparent;
+  
+  padding: 5px;
+  
+ 
 }
 
 .card--image {
   width: 100%;
   border-radius: 9px;
   margin-bottom: 9px;
+ 
 }
 
 /* ADD */
@@ -61,23 +72,35 @@ section {
 .card--stats {
   display: flex;
   align-items: center;
+
 }
 
 .card--star {
-  height: 14px;
+  height: 11px;
 }
 
 /* ADD */
 .card--price {
   margin-top: auto;
+
 }
 
-.card--badge {
-  position: absolute;
-  top: 6px;
-  left: 6px;
-  background-color: white;
-  padding: 5px 7px;
-  border-radius: 2px;
-  font-weight: bold;
+
+
+.img-thumbnail{
+  
+  margin-top: 30px;
 }
+
+
+
+body{
+  background-image: url("./images/bgr6.jpg");
+  color: "white"
+
+}
+
+h1, h2, h3, h4, h5, h6,p {
+  color: #fefefe;
+  }
+
