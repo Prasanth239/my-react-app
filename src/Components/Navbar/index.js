@@ -1,80 +1,53 @@
 import React from "react";
-import {
-  Nav,
-  Navbar,
-  NavbarBrand,
-  NavbarToggler,
-  Collapse,
-  NavItem,
-  NavLink,
-  NavbarText,
-  DropdownItem,
-  DropdownMenu,
-  DropdownToggle,
-  UncontrolledDropdown,
-  Button,
-} from "reactstrap";
 
 const Navb = () => {
   return (
-    <>
-      <div>
-        <Nav
-        color="info"
-        justified
-        tabs
-       fill
-        
-        
+    <nav class="navbar navbar-expand-lg navbar-primary bg-black">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <NavItem>
-            <NavLink active href="home">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="home">
               Home
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink active href="about">
+            </a>
+            <a class="nav-link" href="about">
               About Me
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink active href="step">
+            </a>
+            <a class="nav-link" href="step">
               Step Counter
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink active href="bill">
+            </a>
+            <a class="nav-link" href="bill">
               Split Bill Calculator
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink active href="team">
+            </a>
+            <a class="nav-link" href="team">
               My Team
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink active href="travel">
+            </a>
+            <a class="nav-link" href="travel">
               Travel Cards
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink active href="meme">
+            </a>
+            <a class="nav-link" href="meme">
               Meme Generator
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink active href="sign-up">
+            </a>
+            <a class="nav-link" href="sign-up">
               Sign Up
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink active href="signin">
+            </a>
+            <a class="nav-link" href="signin">
               Sign In
-            </NavLink>
-          </NavItem>
-        </Nav>
+            </a>
+          </div>
+        </div>
       </div>
-    </>
+    </nav>
   );
 };
 
